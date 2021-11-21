@@ -17,51 +17,84 @@
           
 
         }
-       /* .mydiv{
-        text-align: center;
-        background-color: lightblue;
-       
-        width: 25%;
-       } */
         button
        {
            
-        background-color: #06494e;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
+        background-color: #05c46b;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+           
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
   cursor: pointer;
 }
 form {
-            background-color: #0000ffff
+            background-color: rgb(226, 214, 45);
             max-width: 500px;
-            margin: 50px auto;
+            margin: 00px auto;
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
         }
-    
+    label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="mydiv">
-    <h1>D.Y.P Survey Form</h1>
-    <form>
-        <label>Name:-</label>
-        <input type="text" placeholder="Enter your name">
+    
+    <form id="form">
+        <h1>D.Y.P Survey Form</h1>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+           
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
 
-        <label>Email:-</label>
-        <input type="email" placeholder="Enter your email">
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+           
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        
 
-        <label>Contact No:-</label>
-        <input type="tel" placeholder="Enter your mobile no">
 
-        <label>Branch:-</label>
+        <label for="name" id="label-name">
+                Contact No
+            </label>
+        <input type="tel" placeholder="Enter your mobile no" >
+    
+        <label for="name" id="label-name">
+          Branch No
+        </label>
         <input type="text" placeholder="Enter your branch">
 
-        <label>Branch:-</label>
+        <label for="name" id="label-name">
+           Year
+        </label>
         <select name="year">
             <option value="1st Year">1st Year</option>
             <option value="2nd Year">2nd Year</option>
@@ -71,7 +104,7 @@ form {
             <option value="4th Year">4th Year</option>
         </select>
 
-        <label> Are you satisfied with the teaching staff and their teaching methods?:-</label>
+        <label id="label-name" for="name"> Are you satisfied with the teaching staff and their teaching methods?:-</label>
         <select>
             <option value="1st Year">Extremely satisfied</option>
             <option value="2nd Year">Very satisfied</option>
@@ -103,7 +136,7 @@ form {
         <label>Any Comments or suggestions</label>
         <textarea 
                 placeholder="Enter your comment here">
-            </textarea>
+            </textarea></div>
             <button type="submit" value="submit">
                 Submit
             </button>
