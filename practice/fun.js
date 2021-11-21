@@ -61,3 +61,4 @@ var b;
 (a==500)?b= "true" : b="false";
 console.log();
 //Test change 2
+console.log("test");
