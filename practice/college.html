@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-image: url('images/bg.jpg');
+            /* background-position: center; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            font-family: Verdana;
+            text-align: center;
+          
+
+        }
+       /* .mydiv{
+        text-align: center;
+        background-color: lightblue;
+       
+        width: 25%;
+       } */
+        button
+       {
+           
+        background-color: #06494e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form {
+            background-color: #0000ffff
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+    <h1>D.Y.P Survey Form</h1>
+    <form>
+        <label>Name:-</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email:-</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Contact No:-</label>
+        <input type="tel" placeholder="Enter your mobile no">
+
+        <label>Branch:-</label>
+        <input type="text" placeholder="Enter your branch">
+
+        <label>Branch:-</label>
+        <select name="year">
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">
+                3rd Year
+            </option>
+            <option value="4th Year">4th Year</option>
+        </select>
+
+        <label> Are you satisfied with the teaching staff and their teaching methods?:-</label>
+        <select>
+            <option value="1st Year">Extremely satisfied</option>
+            <option value="2nd Year">Very satisfied</option>
+            
+            <option value="1st Year">satisfied</option>
+            <option value="4th Year">Neutral</option>
+            <option value="2nd Year">Dissatisfied</option>
+           
+            <option value="4th Year">Very dissatisfied</option>
+        </select>
+
+        <label>Would you recommend this college to a friend or relative?</label>
+        <label for="recommed-1">
+            <input type="radio"
+                   id="recommed-1"
+                   name="recommed">Yes</input>
+        </label>
+        <label for="recommed-2">
+            <input type="radio"
+                   id="recommed-2"
+                   name="recommed">No</input>
+        </label>
+        <label for="recommed-3">
+            <input type="radio"
+                   id="recommed-3"
+                   name="recommed">Maybe</input>
+        </label>
+
+        <label>Any Comments or suggestions</label>
+        <textarea 
+                placeholder="Enter your comment here">
+            </textarea>
+            <button type="submit" value="submit">
+                Submit
+            </button>
+    </form>
+</div>
+</body>
+</html>

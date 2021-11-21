@@ -1,0 +1,6 @@
+synchronization
+asynchronization
+arrow function
+timeout callback
+how to pass fun to a fun i.e callback
+way of invoking asynchronous fun

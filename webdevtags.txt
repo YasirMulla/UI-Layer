@@ -1,0 +1,9 @@
+subscript
+<sub></sub>
+superscript
+<sup></sup>
+pretext
+<pre>
+write information as it is
+</pre>
+<form>
